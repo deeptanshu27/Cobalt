@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body {
             font-family: "SUSE", sans-serif;
@@ -27,7 +28,10 @@
             margin-right: 32px;
         }
         .play {
-            margin-right: 23px;
+            margin-right: 13px;
+        }
+        .settings {
+            width: 40px;
         }
         footer {
             width: 100%;
@@ -78,8 +82,8 @@
             <button onclick="run()" class="play">
                 <h2>Play!</h2>
             </button>
-            <button onclick="settings()">
-                <h2>settings</h2>
+            <button onclick="settings()" class="settings">
+                <h2><i class="fa fa-gear"></i></h2>
             </button>
         </div>
     </footer>
