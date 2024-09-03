@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "SUSE", sans-serif;
+            overflow: hidden;
+        }
+        h1, h2, h3 {
+            padding: 0;
+            margin: 0;
+            font-weight: normal;
+        }
+        body {
+            margin: 0;
+        }
+        button {
+            width: 175px;
+            height: 40px;
+            padding: 0;
+            margin-right: 32px;
+        }
+        .play {
+            margin-right: 23px;
+        }
+        footer {
+            width: 100%;
+            position: absolute;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            bottom: 0;
+            padding: 20px 10px;
+        }
+        footer > .text-div {
+            display: grid;
+            align-items: center;
+        }
+        footer > .button-div {
+            display: flex;
+            justify-content: right;
+        }
+        img {
+            width: 95%;
+        }
+        #container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin: 8px;
+        }
+        .game-info > button {
+            all: unset;
+            cursor: pointer;
+        }
+        .game-info > h3 {
+            text-align: center;
+        }
+    </style>
+    <script>
+        
+    </script>
+    <script src="/scripts.js"></script>
+    <script src="/main.js"></script>
+</head>
+<body>
+    <div id="container">
+    </div>
+    <footer>
+        <div class="text-div">
+            <h2 id="selected-game"></h2>
+        </div>
+        <div class="button-div">
+            <button onclick="run()" class="play">
+                <h2>Play!</h2>
+            </button>
+            <button onclick="settings()">
+                <h2>settings</h2>
+            </button>
+        </div>
+    </footer>
+</body>
+</html>
