@@ -24,6 +24,7 @@ use std::fs;
 
 #[tauri::command]
 fn add(loc: &str, id: &str, name: &str, img: &str, shortcut: &str) -> String {
+    // chatgpt moment:
     // Read the file content
     let data = fs::read_to_string(loc).unwrap();
 
