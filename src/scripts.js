@@ -17,9 +17,9 @@ tauri_.path.resolveResource("resources/games.json")
 function addGame(id, { name, img }) {
     let container = document.getElementById("container");
     let gameInfo = document.createElement("div");
+    gameInfo.setAttribute("onclick", `load(${id})`);
     gameInfo.className = "game-info";
     let button = document.createElement("button");
-    button.setAttribute("onclick", `load(${id})`);
     button.id = id;
     let img_ = document.createElement("img");
     img_.setAttribute("src", img);
