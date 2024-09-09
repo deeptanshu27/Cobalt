@@ -8,8 +8,17 @@ tauri_.path.resolveResource("resources/games.json")
     .then((data) => {
         data = JSON.parse(data);
         jsonData = data;
-        for (let key in data) {
-            addGame(key, data[key]);
+        if (Object.keys(data).length == 0) {
+            let divC = document.createElement("div");
+            let h1 = document.createElement("h1");
+            h1.innerText = "No games found.";
+            divC.appendChild(h1);
+            divC.className = "center-div";
+            document.getElementById("container").appendChild(divC);
+        } else {
+            for (let key in data) {
+                addGame(key, data[key]);
+            }
         }
     })
 })
